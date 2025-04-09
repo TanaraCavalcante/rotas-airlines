@@ -13,7 +13,7 @@
 
 <body>
     <!-- MENU SUPERIOR -->
-    <nav class="navbar navbar-expand-sm navbar-dark estilo-background-nav">
+    <nav class="navbar navbar-expand-sm navbar-dark estilo-background-nav mb-3">
         <a class="navbar-brand" href="home" id="tituloNav">ROTA<br>Airlines</a>
         <ul class="navbar-nav">
             <!-- Dropdown -->
@@ -45,14 +45,14 @@
         </ul>
     </nav>
     <!-- CHECKIN -->
-    <div class="modal" id="myModal" tabindex="-1" >
+    <div class="modal" id="myModal" tabindex="-1">
         <div class="modal-dialog">
 
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
                     <h4 class="modal-title" id="modalLabel">Are you ready to check-in?</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form type="submit" method="post" action="VALIDACHECKIN">
@@ -73,6 +73,117 @@
             </div>
         </div>
     </div>
+    <!-- CREATE ACCOUNT -->
+    <section class="container">
+        <div class="card-header text-white p-1" style="background-color: #026773; text-align: center; border-radius: 5px;">Create account</div>
+        <br>
+        <div class="card-header text-white p-1 mb-2" style="background-color: #026773; border-radius: 5px;">Personal data</div>
+        <div class="card-header">
+
+            <!--Cadastro Sucesso-->
+            <form type="submit" method="post" action="">
+                <div class="form-group mb-1">
+
+                    <!-- PAIS -->
+                    <label for="selectPais">Country:</label>
+                    <select class="form-control" id="selectPais" name="paisUsuario">
+                        <option value="Brasil">Brazil</option>
+                        <option value="EUA">EUA</option>
+                        <option value="Japão">Italy</option>
+                        <option value="Outros">Others</option>
+                    </select>
+                </div>
+
+                <!-- NOME COMPLETO -->
+                <div class="form-group mb-1">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" id="nome" name="nomeUsuario">
+                </div>
+
+                <!-- Data Nascimento -->
+                <div class="form-group mb-1">
+                    <label for="dataNasc">Date of Birth</label>
+                    <input type="date" class="form-control" id="dataNasc" name="dataNasc">
+                </div>
+
+                <!-- CPF -->
+                <div class="form-group mb-1">
+                    <label for="inputCPF">Fiscal Code:</label>
+                    <input type="text" name="cpf" class="form-control" id="inputCPF"  maxlength="11"
+                        pattern="\d{11}" required>
+                    <small id="cpfHelp" class="form-text text-muted">Write only the fiscal code numbers</small>
+                </div>
+
+                <!-- Numero Celular -->
+                <div class="form-group">
+                    <label for="numeroCelular">Phone Number:</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">+39</span>
+                        </div>
+                        <input type="tel" class="form-control" id="numeroCelular" name="numeroCelular"
+                            placeholder="Write your phone number">
+                    </div>
+                </div>
+
+                <div class="form-group mb-3">
+                    <!-- Sexo -->
+                    <label for="sexo">Sexo:</label>
+                    <select class="form-control" id="sexo" name="sexo">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outros</option>
+                    </select>
+                </div>
+
+        </div>
+        <div class="card-header text-white" style="background-color: #026773;">Dados de login para sua conta</div>
+        <div class="card-header">
+
+            <!-- email -->
+            <div class="form-group">
+                <label for="email">Endereço de E-mail:</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu endereço de e-mail">
+            </div>
+
+            <!-- confirma email -->
+            <div class="form-group">
+                <label for="confirmaEmail">Confirme o endereço de E-mail:</label>
+                <input type="email" class="form-control" id="confirmaEmail"
+                    placeholder="Digite novamente o seu endereço de e-mail">
+            </div>
+
+            <!-- senha -->
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input name="senha" type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            </div>
+
+
+            <!-- confirma senha -->
+            <div class="form-group">
+                <label for="confirmaSenha">Confirme sua senha:</label>
+                <input type="password" class="form-control" id="confirmaSenha" placeholder="Digite novamente sua senha">
+            </div>
+
+            <!-- cadastre-se -->
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-success active btn-custom">Cadastrar-se</button>
+            </div>
+        </div>
+
+
+        <div class="card-footer" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+            <div class="text-center">
+                Já possui uma conta? <a href="LOGIN" style="color: #026773;">Faça login</a>
+            </div>
+        </div>
+        </form>
+
+
+
+    </section>
+
 </body>
 
 </html>
