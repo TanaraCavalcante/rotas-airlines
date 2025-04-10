@@ -59,9 +59,6 @@
                 <div class="form-group mb-1">
                     <label for="numeroCelular">Phone Number:</label>
                     <div class="input-group">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text">+39</span>
-                        </div>
                         <input type="tel" class="form-control" id="numeroCelular" name="numeroCelular"
                             placeholder="Write your phone number">
                     </div>
