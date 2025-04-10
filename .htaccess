@@ -1,4 +1,4 @@
 RewriteEngine on
-RewriteEngine %{SCRIPT_FILENAME} !-f 
-RewriteEngine %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f 
+RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteRule ^(.*)$ index.php?url=$1
