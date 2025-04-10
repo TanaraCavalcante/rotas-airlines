@@ -4,7 +4,7 @@ require_once __DIR__ . "/../Model/user.php";
 class UserController {
     
     public function process($action){
-        if($action == "r"){
+        if($action == "C"){
             // Class que preenche o db em Model/user.php
             $newUser = new User();
             // Recupero os inputs com o "name" em View/register.php 
