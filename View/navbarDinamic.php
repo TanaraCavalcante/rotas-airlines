@@ -1,6 +1,6 @@
 <!-- MENU SUPERIOR -->
  
-<nav class="navbar navbar-expand-sm navbar-dark estilo-background-nav mb-3">
+<nav class="navbar navbar-expand-sm navbar-dark estilo-background-nav">
     <a class="navbar-brand" href="home" id="tituloNav">ROTA<br>Airlines</a>
     <ul class="navbar-nav">
         <!-- Dropdown -->

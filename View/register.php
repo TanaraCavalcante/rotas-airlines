@@ -16,7 +16,7 @@
 
     <section class="container">
         <!-- CREATE ACCOUNT -->
-        <div class="card-header text-white p-1" style="background-color: #026773; text-align: center; border-radius: 5px;">Create account</div>
+        <div class="card-header text-white p-1" style="background-color: #026773; text-align: center; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">Create account</div>
         <br>
         <div class="card-header text-white p-1 mb-2" style="background-color: #026773; border-radius: 5px;">Personal data</div>
         <div class="card-header">
