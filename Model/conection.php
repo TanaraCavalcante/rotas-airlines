@@ -2,10 +2,10 @@
 
 // Logica para conexao com database
 class Conection {
-    public function connect(){
-        $servername = "localhoster";
+    public static function connect(){
+        $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = "mysql";
 
         try{
             $conn = new PDO("mysql:host=$servername; dbname=rotaairlines", $username, $password);
