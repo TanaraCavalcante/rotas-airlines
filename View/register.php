@@ -12,8 +12,8 @@
 </head>
 
 <body>
-   <?php include_once __DIR__ ."/dinamicNavbar.php"; ?>
-   
+    <?php include_once __DIR__ . "/navbarDinamic.php"; ?>
+
     <section class="container">
         <!-- CREATE ACCOUNT -->
         <div class="card-header text-white p-1" style="background-color: #026773; text-align: center; border-radius: 5px;">Create account</div>
@@ -50,7 +50,7 @@
                 <!-- CPF -->
                 <div class="form-group mb-1">
                     <label for="inputCPF">Fiscal Code:</label>
-                    <input type="text" name="cpf" class="form-control" id="inputCPF"  maxlength="11"
+                    <input type="text" name="cpf" class="form-control" id="inputCPF" maxlength="11"
                         pattern="\d{11}" required>
                     <small id="cpfHelp" class="form-text text-muted">Write only the fiscal code numbers</small>
                 </div>
@@ -123,6 +123,8 @@
 
     </section>
 
+    <!-- Footer Dinamico -->
+    <?php include_once __DIR__ . "/footerDinamic.php"; ?>
 </body>
 
 </html>

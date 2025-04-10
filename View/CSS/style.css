@@ -186,3 +186,24 @@ body {
   .resultado-pesquisa li:hover {
     background-color: #f2f2f2;
   }
+
+  /* FOOTER */
+
+  footer {
+    position: absolute;
+    bottom: 100;
+    background-color: #026773;
+    color: #FFF;
+    width: 100%; 
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
