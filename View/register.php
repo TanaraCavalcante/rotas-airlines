@@ -22,12 +22,12 @@
         <div class="card-header">
 
             <!--Cadastro Sucesso-->
-            <form type="submit" method="post" action="">
+            <form type="submit" method="post" action="CADASTRA">
                 <div class="form-group mb-1">
 
                     <!-- PAIS -->
                     <label for="selectPais">Country:</label>
-                    <select class="form-control" id="selectPais" name="paisUsuario">
+                    <select class="form-control" id="selectPais" name="userCountry">
                         <option value="Brasil">Brazil</option>
                         <option value="EUA">EUA</option>
                         <option value="Japão">Italy</option>
@@ -38,36 +38,36 @@
                 <!-- NOME COMPLETO -->
                 <div class="form-group mb-1">
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="nome" name="nomeUsuario">
+                    <input type="text" class="form-control" id="nome" name="userName">
                 </div>
 
                 <!-- Data Nascimento -->
                 <div class="form-group mb-1">
                     <label for="dataNasc">Date of Birth</label>
-                    <input type="date" class="form-control" id="dataNasc" name="dataNasc">
+                    <input type="date" class="form-control" id="dataNasc" name="dateBirth">
                 </div>
 
                 <!-- CPF -->
                 <div class="form-group mb-1">
                     <label for="inputCPF">Fiscal Code:</label>
-                    <input type="text" name="cpf" class="form-control" id="inputCPF" maxlength="11"
+                    <input type="text" name="fiscalCode" class="form-control" id="inputCPF" maxlength="11"
                         pattern="\d{11}" required>
                     <small id="cpfHelp" class="form-text text-muted">Write only the fiscal code numbers</small>
                 </div>
 
                 <!-- Numero Celular -->
                 <div class="form-group mb-1">
-                    <label for="numeroCelular">Phone Number:</label>
+                    <label for="celNumber">Phone Number:</label>
                     <div class="input-group">
-                        <input type="tel" class="form-control" id="numeroCelular" name="numeroCelular"
+                        <input type="tel" class="form-control" id="celNumber" name="celNumber"
                             placeholder="Write your phone number">
                     </div>
                 </div>
 
                 <div class="form-group mb-3">
                     <!-- Sexo -->
-                    <label for="sexo">Sex:</label>
-                    <select class="form-control" id="sexo" name="sexo">
+                    <label for="sexUser">Sex:</label>
+                    <select class="form-control" id="sexUser" name="sexUser">
                         <option value="M">Male</option>
                         <option value="F">Female</option>
                         <option value="O">Others</option>
@@ -94,7 +94,7 @@
             <!-- senha -->
             <div class="form-group mb-1">
                 <label for="senha">Password:</label>
-                <input name="senha" type="password" class="form-control" id="senha" placeholder="Write your password">
+                <input name="password" type="password" class="form-control" id="senha" placeholder="Write your password">
             </div>
 
 

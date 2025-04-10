@@ -1,7 +1,7 @@
 <?php
-$url = isset($_GET['url']) ? strtolower($_GET['url']) : '';
+$url = isset($_GET['url']) ? strtoupper($_GET['url']) : '';
 
-if($url == "register"){
+if($url == "REGISTER"){
     require_once __DIR__ . "/View/register.php";
 }else{
     echo "Pagina nao encontrada: $url";

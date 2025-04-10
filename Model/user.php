@@ -130,4 +130,3 @@ class User{
         $this->sex = $sex;
     }
 }
-}
