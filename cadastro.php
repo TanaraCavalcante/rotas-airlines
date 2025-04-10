@@ -73,8 +73,9 @@
             </div>
         </div>
     </div>
-    <!-- CREATE ACCOUNT -->
+    
     <section class="container">
+        <!-- CREATE ACCOUNT -->
         <div class="card-header text-white p-1" style="background-color: #026773; text-align: center; border-radius: 5px;">Create account</div>
         <br>
         <div class="card-header text-white p-1 mb-2" style="background-color: #026773; border-radius: 5px;">Personal data</div>
@@ -115,7 +116,7 @@
                 </div>
 
                 <!-- Numero Celular -->
-                <div class="form-group">
+                <div class="form-group mb-1">
                     <label for="numeroCelular">Phone Number:</label>
                     <div class="input-group">
                         <div class="input-group-prepend">
@@ -128,59 +129,57 @@
 
                 <div class="form-group mb-3">
                     <!-- Sexo -->
-                    <label for="sexo">Sexo:</label>
+                    <label for="sexo">Sex:</label>
                     <select class="form-control" id="sexo" name="sexo">
-                        <option value="M">Masculino</option>
-                        <option value="F">Feminino</option>
-                        <option value="O">Outros</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                        <option value="O">Others</option>
                     </select>
                 </div>
-
         </div>
-        <div class="card-header text-white" style="background-color: #026773;">Dados de login para sua conta</div>
+        <!-- CADASTRO-->
+        <div class="card-header text-white p-1 mb-2" style="background-color: #026773; border-radius: 5px;">Login details for your account</div>
         <div class="card-header">
 
             <!-- email -->
-            <div class="form-group">
-                <label for="email">Endereço de E-mail:</label>
-                <input type="email" name="email" class="form-control" id="email" placeholder="Digite seu endereço de e-mail">
+            <div class="form-group mb-1">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Write your e-mail address">
             </div>
 
             <!-- confirma email -->
-            <div class="form-group">
-                <label for="confirmaEmail">Confirme o endereço de E-mail:</label>
+            <div class="form-group mb-1">
+                <label for="confirmaEmail">Confirm your e-mail address:</label>
                 <input type="email" class="form-control" id="confirmaEmail"
-                    placeholder="Digite novamente o seu endereço de e-mail">
+                    placeholder="Write your e-mail address again">
             </div>
 
             <!-- senha -->
-            <div class="form-group">
-                <label for="senha">Senha:</label>
-                <input name="senha" type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            <div class="form-group mb-1">
+                <label for="senha">Password:</label>
+                <input name="senha" type="password" class="form-control" id="senha" placeholder="Write your password">
             </div>
 
 
             <!-- confirma senha -->
-            <div class="form-group">
-                <label for="confirmaSenha">Confirme sua senha:</label>
-                <input type="password" class="form-control" id="confirmaSenha" placeholder="Digite novamente sua senha">
+            <div class="form-group mb-3">
+                <label for="confirmaSenha">Confirm you password:</label>
+                <input type="password" class="form-control" id="confirmaSenha" placeholder="Write your password again">
             </div>
 
             <!-- cadastre-se -->
             <div style="text-align: center;">
-                <button type="submit" class="btn btn-success active btn-custom">Cadastrar-se</button>
+                <button type="submit" class="btn btn-success active btn-custom mb-1">Register</button>
             </div>
         </div>
 
 
         <div class="card-footer" style="border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
             <div class="text-center">
-                Já possui uma conta? <a href="LOGIN" style="color: #026773;">Faça login</a>
+                Have an account? <a href="LOGIN" style="color: #026773;">login</a>
             </div>
         </div>
         </form>
-
-
 
     </section>
 
