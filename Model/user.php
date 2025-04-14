@@ -1,4 +1,5 @@
 <?php
+// conexao com database
 require_once __DIR__ ."/conection.php";
 
 class User{
