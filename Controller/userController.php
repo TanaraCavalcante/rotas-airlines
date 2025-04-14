@@ -1,4 +1,5 @@
 <?php 
+// conecto o model de users
 require_once __DIR__ . "/../Model/user.php";
 
 class UserController {

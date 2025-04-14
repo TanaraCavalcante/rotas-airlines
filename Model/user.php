@@ -19,6 +19,7 @@ class User{
             $conn = Conection::connect();
             // insiro os dados diretamente no db
             $sql = $conn->prepare(
+                //! insert igual os valores da tabelo no banco
                 "insert into rotaairlines.users (name, email, dteBirth, nationality, phoneNumber, fiscalCode, password, sex)
                  values(:name, :email, :dteBirth, :nationality, :phoneNumber, :fiscalCode, :password, :sex)"
             );
