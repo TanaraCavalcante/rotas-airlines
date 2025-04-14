@@ -3,6 +3,10 @@ $url = isset($_GET['url']) ? strtoupper($_GET['url']) : '';
 
 
 switch($url){
+    case 'HOME':
+        require_once __DIR__ . "/View/home.php";
+        break;
+
     case 'REGISTER':
         require_once __DIR__ . "/View/register.php";
         break;

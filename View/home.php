@@ -10,5 +10,8 @@
 </head>
 <body>
     
+    <?php include_once __DIR__ . "/navbarDinamic.php"; ?>
+     <!-- Footer Dinamico -->
+     <?php include_once __DIR__ . "/footerDinamic.php"; ?>
 </body>
 </html>
