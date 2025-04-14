@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <!-- javascript -->
-     <script defer src="JS/script.js"></script>
+    <script defer src="JS/script.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
     <?php include_once __DIR__ . "/navbarDinamic.php"; ?>
 
     <!-- Banner -->
-    <section class="container-fluid" id="container-Inicio">
+    <section class="container-fluid mb-5" id="container-Inicio">
         <div class="container">
             <div class="row" style="margin-left: 10%;">
                 <div class="col-sm-4">
@@ -37,19 +37,19 @@
     </section>
 
     <!-- Pesquisa de voo -->
-    <section id="container-meio">
+    <section id="container-meio" class="mb-5">
         <div class="container" id="container-pesquisa-voo">
             <div class="row" style="margin-left: 7%;">
                 <div class="col-sm-11" style="margin-top: 30px ;">
                     <form action="SEARCHAEREO" method="POST" type="submit" name="formDestino" id="formDestino">
-                        <select class="form-select" id="tipoViagem" name="tipoViagem">
+                        <select class="form-select mb-3" id="tipoViagem" name="tipoViagem">
                             <option selected value="1">Andata e ritorno</option>
                             <option value="2">Andata</option>
                         </select>
-                        <select class="form-select" id="tipoClasse" name="tipoClasse">
+                        <select class="form-select  mb-3" id="tipoClasse" name="tipoClasse">
                             <option selected value="1">Economico</option>
                         </select>
-                        <select class="form-select" id="quantidadePassageiros" name="quantidadePassageiros" disabled>
+                        <select class="form-select  mb-3" id="quantidadePassageiros" name="quantidadePassageiros">
                             <option selected value="1">1 passeggero</option>
                             <option value="2">2 passeggeri</option>
                             <option value="3">3 passeggeri</option>
@@ -75,7 +75,7 @@
                                 <label for="dataVolta" class="form-label">Data Ritorno</label>
                                 <input type="date" class="form-control" name="dataVolta" id="dataVolta">
                             </div>
-                            <div class="col" style="margin-top: 31px;">
+                            <div class="col p-3" >
                                 <button type="submit" class="btn btn-primary active btn-custom">Search</button>
                             </div>
                         </div>
@@ -85,59 +85,54 @@
         </div>
     </section>
 
-    <!-- Ofertas de voos -->
-
-    <br><br><br><br><br>
 
     <!-- Banner adicionais -->
-
-    <div class="container" style="margin-top: 100px;">
+    <section class="container">
         <div class="row" style="margin-bottom: 5vh;">
             <div class="col-md-6">
-                <a href="#">
-                    <div class="card" style="width: 100%;">
+                <div class="card" style="width: 100%;">
+                    <a href="#">
                         <img class="card-img-top" src="view/src/turistaImag.gif" alt="Card image" style="width:100%">
-                </a>
-                <div class="card-body">
-                    <h3 class="card-title">Aproveite ofertas em voos pelo Brasil e o mundo!</h3>
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Aproveite ofertas em voos pelo Brasil e o mundo!</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card" style="width: 100%;">
+                    <a href="#">
+                        <img class="card-img-top" src="view/src/turista2imag.gif" alt="Card image" style="width:100%">
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">Compre Passagens e Ganhe pontos em compras utilizando nosso app</h4>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <a href="#">
-                <div class="card" style="width: 100%;">
-                    <img class="card-img-top" src="view/src/turista2imag.gif" alt="Card image" style="width:100%">
-            </a>
-            <div class="card-body">
-                <h4 class="card-title">Compre Passagens e Ganhe pontos em compras utilizando nosso app</h4>
-            </div>
-        </div>
-    </div>
-    </div>
-    </div><br><br>
-
+    </section>
 
     <!-- Footer Dinamico -->
     <?php include_once __DIR__ . "/footerDinamic.php"; ?>
 </body>
 
 <script>
-  const listaResultadosOrigem = [
-    <?php
-      foreach ($voo->getListaDadosVoo() as $item) {
-        echo '"' . $item->getOrigemVoo() . '",';
-      }
-    ?>
-  ];
+    const listaResultadosOrigem = [
+        <?php
+        foreach ($voo->getListaDadosVoo() as $item) {
+            echo '"' . $item->getOrigemVoo() . '",';
+        }
+        ?>
+    ];
 
-  const listaResultadosDestinoData = [
-    <?php
-      foreach ($voo->getListaDadosVoo() as $item) {
-        echo '"' . $item->getDestinoVoo() . '",';
-      }
-    ?>
-  ];
+    const listaResultadosDestinoData = [
+        <?php
+        foreach ($voo->getListaDadosVoo() as $item) {
+            echo '"' . $item->getDestinoVoo() . '",';
+        }
+        ?>
+    ];
 </script>
 
 </html>
-
