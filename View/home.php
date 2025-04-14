@@ -21,9 +21,9 @@
         <div class="container">
             <div class="row" style="margin-left: 10%;">
                 <div class="col-sm-4">
-                    <h2 style="margin-top:70px;">Voo + Hotel com até 30% off</h2>
-                    <h5>Aproveite ofertas!</h5>
-                    <p>Compre Agora Conosco</p>
+                    <h2 style="margin-top:70px;">Volo + Hotel con sconti fino al 30%</h2>
+                    <h5>Approfitta delle offerte!</h5>
+                    <p>Acquista ora con noi</p>
                     <hr class="d-sm-none">
                 </div>
                 <div class="col-sm-8">
@@ -34,7 +34,7 @@
         </div>
     </section>
 
-    
+
 
     <!-- Footer Dinamico -->
     <?php include_once __DIR__ . "/footerDinamic.php"; ?>

@@ -7,7 +7,7 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle custom-nav-text nav-text-Custom" href="#" id="navbardrop"
                 data-bs-toggle="dropdown">
-                My trips
+                Miei Viaggi
             </a>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#myModal">Checkin</a>
@@ -19,11 +19,11 @@
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle custom-nav-text nav-text-Custom" href="#" id="navbardrop"
                 data-bs-toggle="dropdown">
-                Welcome
+                Benvenuto
             </a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="dashboard">My Dashboard</a>
-                <a class="dropdown-item" href="DESLOGAR">Exit</a>
+                <a class="dropdown-item" href="dashboard">Mia Dashboard</a>
+                <a class="dropdown-item" href="DESLOGAR">Uscita</a>
             </div>
         </li>
         <li class="nav-item">
@@ -38,20 +38,20 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title" id="modalLabel">Are you ready to check-in?</h4>
+                <h4 class="modal-title" id="modalLabel">Sei pronto per effettuare il check-in?</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <form type="submit" method="post" action="VALIDACHECKIN">
                     <div class="form-group mb-3">
-                        <label for="email">Search reservation to:</label>
-                        <input type="text" value="Codigo da Reserva" class="form-control" readonly>
+                        <label for="email">Cerca prenotazione a:</label>
+                        <input type="text" value="Codice di prenotazione" class="form-control" readonly>
                     </div>
                     <div class="form-group mb-3">
-                        <label for="pwd">Reservation Code</label>
-                        <input type="text" class="form-control" id="pwd" placeholder="Enter the reservation code" name="cdReserva">
+                        <label for="pwd">Codice di prenotazione</label>
+                        <input type="text" class="form-control" id="pwd" placeholder="Inserisci il codice di prenotazione" name="cdReserva">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-custom" style="width: 100%;">Start Chek-in</button>
+                    <button type="submit" class="btn btn-primary btn-custom" style="width: 100%;">Inizia Chek-in</button>
                 </form>
             </div>
             <div class="modal-footer">
